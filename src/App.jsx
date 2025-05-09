@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Main from './components/main/Main';
-import Info from './components/main/Info';
 import Categories from './components/main/Categories';
+import Info from './components/main/Info';
+import Main from './components/main/Main';
 import Orders from './components/main/Orders';
+import Tool from './components/main/Tool';
 
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
               <Route path="/info" element={<Info />} />
               <Route path="/categories" element={<Categories />} />
               <Route path="/orders" element={<Orders />} />
+              <Route path="/tool" element={<Tool />} />
             </Routes>
           </main>
         </div>
